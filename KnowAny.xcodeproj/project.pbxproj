@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3827830D963A34C030D715A /* libPods-KnowAny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC1B0945DE7640255B38518 /* libPods-KnowAny.a */; };
 		BF8A5EBE2088AC5F006BCE0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8A5EBD2088AC5F006BCE0B /* AppDelegate.m */; };
 		BF8A5EC12088AC5F006BCE0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8A5EC02088AC5F006BCE0B /* ViewController.m */; };
 		BF8A5EC42088AC5F006BCE0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8A5EC22088AC5F006BCE0B /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37ACACAACB48A651B4C6FD38 /* Pods-KnowAny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowAny.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowAny/Pods-KnowAny.debug.xcconfig"; sourceTree = "<group>"; };
+		4EC1B0945DE7640255B38518 /* libPods-KnowAny.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnowAny.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8A5EB92088AC5E006BCE0B /* KnowAny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowAny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8A5EBC2088AC5F006BCE0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF8A5EBD2088AC5F006BCE0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		BF8A5EDC2088AC60006BCE0B /* KnowAnyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowAnyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8A5EE02088AC60006BCE0B /* KnowAnyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnowAnyUITests.m; sourceTree = "<group>"; };
 		BF8A5EE22088AC60006BCE0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C14780770FA2FA570F2117 /* Pods-KnowAny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowAny.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowAny/Pods-KnowAny.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3827830D963A34C030D715A /* libPods-KnowAny.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52024DC64C3E59A8DF09FA55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EC1B0945DE7640255B38518 /* libPods-KnowAny.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62DC2F59952DA1CD55D38DF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37ACACAACB48A651B4C6FD38 /* Pods-KnowAny.debug.xcconfig */,
+				F2C14780770FA2FA570F2117 /* Pods-KnowAny.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BF8A5EB02088AC5E006BCE0B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				BF8A5ED42088AC60006BCE0B /* KnowAnyTests */,
 				BF8A5EDF2088AC60006BCE0B /* KnowAnyUITests */,
 				BF8A5EBA2088AC5E006BCE0B /* Products */,
+				62DC2F59952DA1CD55D38DF2 /* Pods */,
+				52024DC64C3E59A8DF09FA55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF8A5EE52088AC60006BCE0B /* Build configuration list for PBXNativeTarget "KnowAny" */;
 			buildPhases = (
+				ECD647F400DBED5D96FFAF32 /* [CP] Check Pods Manifest.lock */,
 				BF8A5EB52088AC5E006BCE0B /* Sources */,
 				BF8A5EB62088AC5E006BCE0B /* Frameworks */,
 				BF8A5EB72088AC5E006BCE0B /* Resources */,
+				D249B863A35BFF326237670D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +282,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D249B863A35BFF326237670D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KnowAny/Pods-KnowAny-resources.sh",
+				"${PODS_ROOT}/DKNightVersion/DKNightVersion/ColorTable/DKColorTable.txt",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DKColorTable.txt",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KnowAny/Pods-KnowAny-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECD647F400DBED5D96FFAF32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnowAny-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF8A5EB52088AC5E006BCE0B /* Sources */ = {
@@ -431,15 +498,13 @@
 		};
 		BF8A5EE62088AC60006BCE0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37ACACAACB48A651B4C6FD38 /* Pods-KnowAny.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47MFJ7QTEK;
 				INFOPLIST_FILE = KnowAny/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.KnowAny;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,15 +513,13 @@
 		};
 		BF8A5EE72088AC60006BCE0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C14780770FA2FA570F2117 /* Pods-KnowAny.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47MFJ7QTEK;
 				INFOPLIST_FILE = KnowAny/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.KnowAny;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,11 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47MFJ7QTEK;
 				INFOPLIST_FILE = KnowAnyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.KnowAnyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,11 +548,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47MFJ7QTEK;
 				INFOPLIST_FILE = KnowAnyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.KnowAnyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,11 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47MFJ7QTEK;
 				INFOPLIST_FILE = KnowAnyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.KnowAnyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,11 +576,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47MFJ7QTEK;
 				INFOPLIST_FILE = KnowAnyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.KnowAnyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
